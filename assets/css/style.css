@@ -1,0 +1,166 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all .2s linear;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 80%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 8vh;
+    background: transparent;
+    z-index: 1000;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.banner {
+    width: 100%; height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), darkblue), url('../images/medical.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8vh 8rem;
+}
+
+.banner2 {
+    width: 100%; height: 30vh;
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('../images/ps2.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner2 h4 {
+    color: #fff;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.banner2 h4 a {
+    color: #ddd;
+}
+
+.banner-details {
+    width: 100%; height: 30vh;
+    position: absolute;
+    bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.banner-details a {
+    padding: 1rem 2rem;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-details a:hover {
+    background: #fff;
+    color: darkblue;
+}
+
+.banner-details a .icon {
+    margin-bottom: 1rem;
+}
+
+.banner-details a .icon i {
+    font-size: 2.5rem;
+}
+
+.banner-details a .desc {
+    font-size: 1.2rem;
+}
+
+.well.custom img {
+    width: 100px;
+    animation: bounce .5s linear infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+.well.custom h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.well.custom blockquote {
+    color: #fff;
+}
+
+.form-container {
+    width: 100%; height: 70vh;
+    overflow: auto;
+}
+
+.links {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2rem;
+}
+
+.links a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content {
+    width: 100%;
+}
+
+.content-header {
+    text-align: center;
+}
+
+.content-header h2 {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.box {
+    box-shadow: 2px 2px 5px darkblue;
+    padding: 1rem;
+}
